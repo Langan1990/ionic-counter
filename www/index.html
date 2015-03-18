@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="cordova.js"></script>
+    
+    <script type="text/javascript">
+      angular.module('counter', ['ionic'])
+
+      .controller("CountCtrl", function($scope) {
+        $scope.count = 0;
+      });
+    </script>
+ 
+  </head>
+  
+  <body ng-app="counter" ng-controller="CountCtrl">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Counter</h1>
+      </ion-header-bar>
+      
+      <ion-content>
+        <div class="list list-inset">
+          <label class="item item-input">
+            <input type="number" ng-model="count" />
+          </label>
+          <button class="button button-block button-positive" ng-click="count = count + 1">
+            Count
+          </button>      
+        </div> 
+      </ion-content>
+      
+    </ion-pane>
+  </body>
+  
+</html>
