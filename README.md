@@ -5,19 +5,15 @@ The textbox is editable, so the user can type in their own number.
 The button will count from that number onwards.
 
 ## Exercises
-1. Add a reset button, that resets the count to 0.
+1. Add a button that decreases the count by one.
 
-2. Style the textbox to have the number right-justified and larger.
+2. Add a reset button, that resets the count to zero.
 
-3. Add icons to the Count and Reset buttons.
+3. Style the textbox to have the number right-justified and larger.
 
-4. Put the Reset button beside the Count button.
+4. Add icons to the buttons.
 
-5. Make the reset button smaller than the Count button.
-
-6. Persist the value of count, so that if the app is hard-restarted the previous value of count stays.
-
-7. Separate the controller out into the file js/app.js. (This just reverses the onepage.)
+5. Persist the value of count, so that if the app is hard-restarted the previous value of count stays.
 
 ## Notes
 
